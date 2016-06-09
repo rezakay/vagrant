@@ -23,6 +23,13 @@ sudo mysql -u root -proot  -e "SHOW DATABASES;"
 sudo apt-get -y --ignore-missing install php5 libapache2-mod-php5 
 
 
+# Download starter content
+
+cd /vagrant
+
+sudo -i -u vagrant wget -q https://raw.githubusercontent.com/rezakay/vagrant/master/files/index.html
+sudo -i -u vagrant wget -q https://raw.githubusercontent.com/rezakay/vagrant/master/files/info.php
+
 php -r 'echo "\n\nYour PHP installation is working fine.\n\n\n";'
 
 
