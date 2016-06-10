@@ -33,9 +33,10 @@ sudo apt-get -y --ignore-missing install php5 libapache2-mod-php5 php5-mcrypt ph
 
 cd /vagrant
 
-sudo -i -u vagrant wget -q https://raw.githubusercontent.com/rezakay/vagrant/master/files/index.html -P /vagrant
-sudo -i -u vagrant wget -q https://raw.githubusercontent.com/rezakay/vagrant/master/files/
-info.php -P /vagrant
+#sudo -i -u vagrant wget -q https://raw.githubusercontent.com/rezakay/vagrant/master/files/index.html -P /vagrant
+#sudo -i -u vagrant wget -q https://raw.githubusercontent.com/rezakay/vagrant/master/files/ info.php -P /vagrant
+
+sudo -i -u vagrant wget -r -l1 -q https://raw.githubusercontent.com/rezakay/vagrant/master/files -P /vagrant
 
 ls /vagrant
 
