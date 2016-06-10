@@ -13,6 +13,7 @@ rm -rf /var/www/html
 
 ln -s /vagrant /var/www/html
 
+
 sudo /etc/init.d/apache2 start
 
 #making login credentials or mysql
@@ -34,7 +35,9 @@ cd /vagrant
 
 sudo -i -u vagrant wget -q https://raw.githubusercontent.com/rezakay/vagrant/master/files/index.html -P /vagrant
 sudo -i -u vagrant wget -q https://raw.githubusercontent.com/rezakay/vagrant/master/files/
-info.php
+info.php -P /vagrant
+
+ls /vagrant
 
 sudo /etc/init.d/apache2 restart
 
