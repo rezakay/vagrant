@@ -20,7 +20,9 @@ sudo apt-get -y install mysql-server
 sudo mysql -u root -proot  -e "SHOW DATABASES;"
 
 
-sudo apt-get -y --ignore-missing install php libapache2-mod-php 
+sudo apt-get -y --ignore-missing install libapache2-mod-php5 
+
+sudo a2enmod php5
 
 
 # Download starter content
