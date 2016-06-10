@@ -7,7 +7,7 @@ sudo apt-get -y install apache2
 sudo /etc/init.d/apache2 stop
 
 
-rm-rf /var/www/html
+rm -rf /var/www/html
 
 ln -s /vagrant /var/www/html
 
@@ -25,7 +25,7 @@ sudo apt-get -y --ignore-missing install php5 libapache2-mod-php5
 
 # Download starter content
 
-cd /home/vagrant
+cd /vagrant
 
 sudo -i -u vagrant wget -q https://raw.githubusercontent.com/rezakay/vagrant/master/files/index.html
 sudo -i -u vagrant wget -q https://raw.githubusercontent.com/rezakay/vagrant/master/files/info.php
