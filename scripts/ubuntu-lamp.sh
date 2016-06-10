@@ -2,6 +2,10 @@
 
 sudo apt-get update
 
+# tools 
+
+sudo apt-get -y install git screen nc
+
 sudo apt-get -y install apache2
 
 ifconfig eth0 | grep inet | awk '{ print $2 }'
