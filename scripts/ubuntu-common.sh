@@ -4,6 +4,6 @@ sudo apt-get update
 
 # tools 
 
-sudo apt-get -y install git screen nc
+sudo apt-get -y install git screen netcat
 
 
